@@ -21,8 +21,10 @@ function App() {
         >
           <Route index element={<Home />} />
           <Route path="/ShippingShips" element={<Ships />} />
-          <Route path="/haulingships" element={<Haulers />} />
-          <Route path="/edithauler" element={<EditHauler />} />
+          <Route path="haulingships">
+            <Route index element={<Haulers />} />
+            <Route path=":haulerId/edithauler" element={<EditHauler />} />
+          </Route>
         </Route>
       </Routes>
     </>
