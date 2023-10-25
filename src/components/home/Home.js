@@ -28,7 +28,7 @@ export const Home = () => {
           <h2>Ships</h2>
           <ul>
             {ships.map((ship) => {
-              return <li>{ship.name}</li>;
+              return <li key={ship.id}>{ship.name}</li>;
             })}
           </ul>
         </div>
@@ -36,7 +36,7 @@ export const Home = () => {
           <h2>Haulers</h2>
           <ul>
             {haulers.map((hauler) => {
-              return <li>{hauler.name}</li>;
+              return <li key={hauler.id}>{hauler.name}</li>;
             })}
           </ul>
         </div>
@@ -44,7 +44,7 @@ export const Home = () => {
           <h2>Docks</h2>
           <ul>
             {docks.map((dock) => {
-              return <li>{dock.location}</li>;
+              return <li key={dock.id}>{dock.location}</li>;
             })}
           </ul>
         </div>
