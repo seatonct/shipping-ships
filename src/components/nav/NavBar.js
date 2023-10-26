@@ -10,7 +10,9 @@ export const NavBar = () => {
       <li className="navbar_item">
         <Link to="/haulingships">Haulers</Link>
       </li>
-      <li className="navbar_item">Docks</li>
+      <li className="navbar_item">
+        <Link to="/docks">Docks</Link>
+      </li>
     </ul>
   );
 };
