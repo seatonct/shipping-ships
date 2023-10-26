@@ -5,6 +5,7 @@ import { Home } from "./components/home/Home";
 import { Ships } from "./components/ships/ships";
 import { Haulers } from "./components/haulers/Hauler";
 import { EditHauler } from "./components/editHauler/editHauler";
+import { Docks } from "./components/docks/Docks";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route index element={<Haulers />} />
             <Route path=":haulerId/edithauler" element={<EditHauler />} />
           </Route>
+          <Route path="/docks" element={<Docks />} />
         </Route>
       </Routes>
     </>
